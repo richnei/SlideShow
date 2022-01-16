@@ -9,7 +9,7 @@ const images = [
   { id: "6", url: "./img/6_mm.jpg" },
 ];
 
-const container = document.querySelector("#container-items");
+const containerItems = document.querySelector("#container-items");
 
 const loadImages = (images, container) => {
   images.forEach((image) => {
@@ -21,4 +21,11 @@ const loadImages = (images, container) => {
   });
 };
 
-loadImages(images, container);
+loadImages(images, containerItems);
+let items = document.querySelectorAll(".item");
+
+const previous = () => {
+  containerItems.appendChild(items[0]);
+};
+
+document.querySelector("#previous").addEventListener("click", previous);
