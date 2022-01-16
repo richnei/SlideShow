@@ -4,6 +4,8 @@
 }
 
 .container-slide {
+  display: flex;
+  justify-content: space-between;
   width: 50vw;
   height: 50vh;
   background-color: black;
@@ -13,12 +15,39 @@
 }
 
 .container-items {
+  position: absolute;
   display: flex;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.item {
   width: 50vw;
   height: 50vh;
 }
 
-.item {
-    width: 50vw;
-    height: 50vh;
+.item img {
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.action-button {
+  font: bold 30px sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  color: #00000000;
+  user-select: none;
+  z-index: 1;
+}
+
+.action-button:hover {
+  color: white;
+  background-color: #00000055;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
 }
